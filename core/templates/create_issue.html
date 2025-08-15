@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Issue</title>
+</head>
+<body>
+    <h2>Create a New Issue</h2>
+    <form method="post">
+        {% csrf_token %}
+        <p>Title: <input type="text" name="title"></p>
+        <p>Description:<br><textarea name="description"></textarea></p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
